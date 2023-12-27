@@ -33,34 +33,26 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>${variables.name ? variables.name : "Adriana"} ${
-    variables.lastName ? variables.lastName : "Chiquito"
+          <h1>${variables.name ? variables.name : "Dylan"} ${
+    variables.lastName ? variables.lastName : "Smith"
   }</h1>
           <h2>${variables.role ? variables.role : "Junior Developer"}</h2>
           <h3>${variables.city ? variables.city : "Ibiza"}, ${
     variables.country ? variables.country : "Spain"
   }</h3>
   <ul class="${variables.socialMediaPosition}">
-            <li ${
+            <li> <a href="https://twitter.com/${
               variables.twitter
-                ? variables.twitter
-                : "https://twitter.com/4geeksacademy"
-            }> <a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li ${
+            }"><i class="fab fa-twitter"></i></a></li>
+            <li> <a href="https://github.com/${
               variables.github
-                ? variables.github
-                : "https://github.com/adrianacp10"
-            }><a href="https://github.com/adrianacp10"><i class="fab fa-github"></i></a></li>
-            <li ${
+            }"><i class="fab fa-github"></i></a></li>
+            <li> <a href="https://linkedin.com/school/${
               variables.linkedin
-                ? variables.linkedin
-                : "https://linkedin.com/school/4geeksacademy"
-            }><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li ${
+            }"><i class="fab fa-linkedin"></i></a></li>
+            <li> <a href="https://instagram.com/${
               variables.instagram
-                ? variables.instagram
-                : "https://instagram.com/4geeksacademy"
-            }><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+            }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
